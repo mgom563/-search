@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>エビ検索</title>
+<script>
+const params = new URLSearchParams(location.search);
+const q = params.get("q");
+
+if(q){
+  location.href = "https://www.google.com/search?q=" + q;
+}
+</script>
+</head>
+
+<body style="font-family:sans-serif;text-align:center;margin-top:50px;">
+<h1>🦐 エビ検索</h1>
+<p>検索中...</p>
+</body>
+</html>
